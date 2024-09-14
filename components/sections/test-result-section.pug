@@ -1,0 +1,16 @@
+include ../mixins
+
+section.section.section-test-result
+  +headerSection('test-output','検査結果画面の解説','SALES SCOREのアウトプット項目について紹介します。')
+  +list-2('適性検査のアウトプット', [
+  { icon: 'output-test-1', title: 'データサマリー' },
+  { icon: 'output-test-2', title: 'データ詳細' },
+  { icon: 'output-test-3', title: 'データ比較' }])
+  +list-2('企業傾向分析', [
+  { icon: 'analysis-trend-1', title: 'データサマリー' },
+  { icon: 'analysis-trend-2', title: 'データ詳細' },
+  { icon: 'analysis-trend-3', title: 'データ比較' },
+  { icon: 'analysis-trend-4', title: 'データ比較' }])
+  +list-2('検査結果詳細', [
+  { icon: 'output-detail-1', title: 'データサマリー' },
+  { icon: 'output-detail-2', title: 'データ詳細' },])

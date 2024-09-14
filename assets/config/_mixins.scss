@@ -1,0 +1,59 @@
+@mixin flex-layout($columns: null, $gap: null) {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: $gap;
+  margin-left: calc(($gap / 2) * -1);
+  margin-right: calc(($gap / 2) * -1);
+  @media (max-width: 575px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  > * {
+    margin-left: calc($gap / 2);
+    margin-right: calc($gap / 2);
+
+    @if ($columns == two) {
+      flex: 0 0 calc(50% - $gap);
+      max-width: calc(50% - $gap);
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    } @else if ($columns == three) {
+      flex: 0 0 calc((100% / 3) - $gap);
+      max-width: calc((100% / 3) - $gap);
+
+      @media (max-width: 991px) {
+        flex: 0 0 calc(50% - $gap);
+        max-width: calc(50% - $gap);
+      }
+
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    } @else if ($columns == four) {
+      flex: 0 0 calc(25% - $gap);
+      max-width: calc(25% - $gap);
+
+      @media (max-width: 1190px) {
+        flex: 0 0 calc((100% / 3) - $gap);
+        max-width: calc((100% / 3) - $gap);
+      }
+
+      @media (max-width: 991px) {
+        flex: 0 0 calc(50% - $gap);
+        max-width: calc(50% - $gap);
+      }
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+}

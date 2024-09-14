@@ -1,0 +1,31 @@
+header.header 
+  .header-inner 
+    .navbar 
+      .navbar-breadcrumbs
+        a(href="#") 
+          span.icon 
+            img(src="../assets/images/icon-home.svg", alt="icon-home")
+          span.text トップ
+      .navbar-right 
+        a(href="#") 
+          span.text ログイン
+          span.icon 
+            img(src="../assets/images/icon-login.svg", alt="icon-login")
+        a(href="#") 
+          span.text お問い合わせ
+          span.icon 
+            img(src="../assets/images/icon-contact.svg", alt="icon-contact")
+    .navbar-search
+        .text どんな事でお困りですか？
+        form.form-search
+          .form-item
+            span.icon-search 
+              img(src="../assets/images/icon-search-form.svg", alt="icon-search")
+            input(type="text", placeholder="キーワードを入力")
+          button.btn-submit(type="submit") 検索
+  .header-mobile
+    .logo
+        img(src="../assets/images/logo.svg", alt="logo")
+    button.btn-toggle
+        img(src="../assets/images/icon-menu.svg", alt="icon-menu")
+  include ./menu-mobile

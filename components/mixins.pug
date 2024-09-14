@@ -1,0 +1,36 @@
+mixin listItem(content)
+  li.list-item
+    a(href="#") #{content}
+    span.icon 
+      img(src="../assets/images/icon-next.svg", alt="icon-next")
+
+mixin headerSection(image,title,description)
+  .view-header 
+    .view-header-inner
+      img(src=`../assets/images/${image}.svg`, alt=`${image}`)
+      .view-header-inner__content 
+        h3.title #{title}
+        .description #{description}
+
+mixin list(icon,title)
+  .list-item 
+    img(src=`../assets/images/${icon}.svg`, alt=`${icon}`)
+    a.list-item__title(href="#") #{title}
+
+mixin list-2(title, lists)
+  .section-container-wrapper  
+    h4.title #{title}
+    .list-items
+      each list in lists
+        +list(list.icon, list.title)
+
+mixin listKey (content)
+      li.list-item
+        a.item-content(href="#") #{content}
+
+mixin keyFeatures(title,list)
+  .section-container-wrapper  
+    h4.title #{title}
+    ul.list-items 
+      each item in list
+        +listKey(item)
