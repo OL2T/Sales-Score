@@ -8,12 +8,15 @@ const menuToggle = () => {
   const closeButton = document.querySelector(".btn-close");
   const menuToggle = document.querySelector(".menu-toggle");
   const menuHeight = menuToggle.clientHeight;
-  console.log(menuHeight);
-  if (toggleButton && closeButton && header && body) {
+
+  if (window.innerWidth < 768) {
+    menuToggle.style.height = `${menuHeight}px`;
+  }
+
+  if (toggleButton && closeButton && header && body && menuToggle) {
     toggleButton.addEventListener("click", () => {
       header.classList.add("is-active");
       body.classList.add("overflow-hidden");
-      menuToggle.style.height = `${menuHeight}px`;
     });
 
     closeButton.addEventListener("click", () => {
