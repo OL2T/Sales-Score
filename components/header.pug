@@ -21,12 +21,12 @@ header.header
           span.icon 
             img(src="../assets/images/icon-contact.svg", alt="icon-contact")
     .navbar-search
-        .text どんな事でお困りですか？
         form.form-search
+          label(for="input-search").text どんな事でお困りですか？
           .form-item
             span.icon-search 
               img(src="../assets/images/icon-search-form.svg", alt="icon-search")
-            input(type="text", placeholder="キーワードを入力")
+            input(id="input-search" type="text", placeholder="キーワードを入力")
           button.btn-submit(type="submit") 検索
   
   include ./menu-mobile

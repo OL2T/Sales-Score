@@ -64,7 +64,6 @@ h2 {
   font-weight: 700;
 }
 
-// .globalnav-noscroll-long {
-//   overflow: hidden !important;
-//   padding-inline-end: var(--r-globalnav-scrollbar-width);
-// }
+.hidden {
+  display: none;
+}

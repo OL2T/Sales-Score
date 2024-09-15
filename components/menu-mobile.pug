@@ -11,7 +11,8 @@
             .form-item
               span.icon-search 
                 img(src="../assets/images/icon-search-form.svg", alt="icon-search")
-              input(type="text", placeholder="キーワードを入力")
+              label(for="input-search-mobile").hidden
+              input(id="input-search-mobile" type="text", placeholder="キーワードを入力")
             button.btn-submit(type="submit") 検索
     ul.list-items
       +listItem('検査結果画面の解説')
