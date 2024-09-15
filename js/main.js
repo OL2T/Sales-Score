@@ -13,7 +13,7 @@ const menuToggle = () => {
     menuToggle.style.height = `${menuHeight}px`;
   }
 
-  if (toggleButton && closeButton && header && body && menuToggle) {
+  if (toggleButton && closeButton && header && body) {
     toggleButton.addEventListener("click", () => {
       header.classList.add("is-active");
       body.classList.add("overflow-hidden");

@@ -77,6 +77,9 @@
 .instruction-section {
   .view-header {
     margin-bottom: 23px;
+    &-inner__content .title {
+      margin-bottom: 11px;
+    }
   }
   .list-items {
     @include flex-layout(three, 15px);
@@ -100,6 +103,11 @@
 }
 
 .section-test-result {
+  .section-container-wrapper {
+    &:nth-child(2) {
+      margin-bottom: 60px;
+    }
+  }
   .list-items {
     @include flex-layout(four, 16px);
     .list-item {
@@ -107,9 +115,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 0;
+      padding: 24px 0;
       background-color: $color_grey_100;
       border-radius: 8px;
+      max-height: 160px;
       &__title {
         margin-top: 22px;
         color: $primary_color;

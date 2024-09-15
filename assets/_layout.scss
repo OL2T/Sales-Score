@@ -83,11 +83,14 @@
 .footer {
   background-color: $color_black;
   text-align: right;
-  font-size: 12px;
-  line-height: 36px;
-  color: white;
-  padding: 27px 0 30.8px 0;
+  padding: 27px 0 30px 0;
+  .copyright {
+    font-size: 12px;
+    color: white;
+    margin-right: 44px;
+  }
 }
+
 .aside-left {
   position: sticky;
   top: 10px;
@@ -102,7 +105,7 @@
   }
   .support-site {
     font-size: 18px;
-    margin-top: 18px;
+    margin-top: 17.9px;
     padding: 8px 6px 8px 10px;
     background-color: $primary_color;
     border-radius: 5px;
@@ -114,15 +117,19 @@
   }
   .list-items {
     text-align: left;
-    margin-top: 27px;
+    margin-top: 26px;
     .list-item {
       display: flex;
       justify-content: space-between;
-      padding: 26px 22px 20px 19px;
+      padding: 25px 22px 20px 19px;
       border-top: 1px solid #e1e8ef;
-      &:last-child {
-        padding-bottom: 11px;
-      }
+      // &:first-child {
+      //   padding-top: 25px;
+      //   padding-bottom: 21px;
+      // }
+      // &:last-child {
+      //   padding-bottom: 20px;
+      // }
     }
   }
 }
