@@ -1,13 +1,23 @@
 @media (min-width: 768px) {
-  .menu-toggle,
-  .header .logo {
+  .menu-toggle {
     display: none;
+  }
+  .header {
+    &-mobile {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
   }
   .btn-toggle {
     display: none;
   }
 }
 @media (max-width: 991px) {
+  .main-layout {
+    gap: 32px;
+  }
   .header .navbar-search {
     display: block;
     padding-left: 50px;
@@ -38,9 +48,6 @@
     .navbar-search {
       display: none;
     }
-  }
-  .header .navbar-right a:not(:last-child) {
-    margin-right: 16px;
   }
   .header {
     margin-top: 0;
