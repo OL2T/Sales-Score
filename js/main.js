@@ -6,12 +6,12 @@ const menuToggle = () => {
 
   const toggleButton = document.querySelector(".btn-toggle");
   const closeButton = document.querySelector(".btn-close");
-  const menuToggle = document.querySelector(".menu-toggle");
-  const menuHeight = menuToggle.clientHeight;
+  // const menuToggle = document.querySelector(".menu-toggle");
+  // const menuHeight = menuToggle.clientHeight;
 
-  if (window.innerWidth < 768) {
-    menuToggle.style.height = `${menuHeight}px`;
-  }
+  // if (window.innerWidth < 768) {
+  //   menuToggle.style.height = `${menuHeight}px`;
+  // }
 
   if (toggleButton && closeButton && header && body) {
     toggleButton.addEventListener("click", () => {

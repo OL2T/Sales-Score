@@ -17,7 +17,7 @@
       flex: 0 0 calc(50% - $gap);
       max-width: calc(50% - $gap);
 
-      @media (max-width: 767px) {
+      @media (max-width: 575px) {
         flex: 0 0 100%;
         max-width: 100%;
       }
@@ -30,7 +30,7 @@
         max-width: calc(50% - $gap);
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 575px) {
         flex: 0 0 100%;
         max-width: 100%;
       }
@@ -47,12 +47,12 @@
         flex: 0 0 calc(50% - $gap);
         max-width: calc(50% - $gap);
       }
-      @media (max-width: 767px) {
+      @media (max-width: 575px) {
         flex: 0 0 100%;
         max-width: 100%;
       }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
       margin: 0;
     }
   }
